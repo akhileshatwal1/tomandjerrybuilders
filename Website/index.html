@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tom & Jerry Builders</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #f4c542;
+    }
+
+    .hero {
+      position: relative;
+      height: 80vh;
+      overflow: hidden;
+    }
+
+    .hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      animation: flash 15s infinite;
+    }
+
+    .hero img:nth-child(1) { animation-delay: 0s; }
+    .hero img:nth-child(2) { animation-delay: 5s; }
+    .hero img:nth-child(3) { animation-delay: 10s; }
+
+    @keyframes flash {
+      0% { opacity: 0; }
+      10% { opacity: 1; }
+      30% { opacity: 1; }
+      40% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+
+    .about, .services, .contact {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .about h2, .services h2, .contact h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    .about p {
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+
+    .service-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .card {
+      background: #f4f4f4;
+      border-radius: 10px;
+      width: 280px;
+      padding: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      margin: 10px 0;
+      font-size: 1.3rem;
+      color: #222;
+    }
+
+    .card p {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #555;
+    }
+
+    .contact-form {
+      max-width: 600px;
+      margin: auto;
+      text-align: left;
+    }
+
+    .contact-form label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact-form button {
+      background: #222;
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .contact-form button:hover {
+      background: #f4c542;
+      color: #222;
+    }
+
+    .map {
+      margin-top: 40px;
+    }
+
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tom & Jerry Builders</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="https://picsum.photos/1200/800?random=1" alt="Modern Building">
+    <img src="https://picsum.photos/1200/800?random=2" alt="Construction Site">
+    <img src="https://picsum.photos/1200/800?random=3" alt="Interior Design">
+  </section>
+
+  <section class="about" id="about">
+    <h2>Welcome to Tom & Jerry Builders</h2>
+    <p>
+      We specialize in modern construction, innovative designs, and reliable project delivery.
+      Inspired by excellence, our team builds homes, offices, and commercial spaces that stand
+      the test of time. With a commitment to quality and customer satisfaction, we bring your
+      vision to life.
+    </p>
+  </section>
+
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <img src="https://picsum.photos/400/250?random=4" alt="Residential Projects">
+        <h3>Residential Projects</h3>
+        <p>We build modern homes with innovative designs, ensuring comfort and durability for families.</p>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/400/250?random=5" alt="Commercial Buildings">
+        <h3>Commercial Buildings</h3>
+        <p>From offices to retail spaces, we deliver functional and stylish commercial projects.</p>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/400/250?random=6" alt="Interior Design">
+        <h3>Interior Design</h3>
+        <p>Our creative team transforms interiors into elegant, practical, and inspiring spaces.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-form">
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <div class="map">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.123456789!2d90.412345!3d23.780123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b123456789%3A0xabcdef123456789!2sTom%20%26%20Jerry%20Builders!5e0!3m2!1sen!2sin!4v1700000000000" 
+        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Tom & Jerry Builders. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

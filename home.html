@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tom & Jerry Builders | New York Construction Experts</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+        }
+
+        body {
+            background: #f4f6f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #1f2933;
+            color: white;
+            padding: 20px 60px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header h1 {
+            font-size: 26px;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin-right: 25px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                        url('https://images.unsplash.com/photo-1503387762-592deb58ef4e') center/cover;
+            color: white;
+            padding: 120px 60px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 44px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .section {
+            padding: 70px 60px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section h3 {
+            font-size: 32px;
+            margin-bottom: 25px;
+            color: #1f2933;
+            text-align: center;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card h4 {
+            margin-bottom: 12px;
+            color: #2563eb;
+        }
+
+        .about {
+            text-align: center;
+            max-width: 900px;
+            margin: auto;
+            font-size: 18px;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 35px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .contact-form button {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .contact-form button:hover {
+            background: #1e40af;
+        }
+
+        .contact-info {
+            font-size: 18px;
+        }
+
+        footer {
+            background: #1f2933;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 20px;
+            }
+            .hero {
+                padding: 80px 20px;
+            }
+            .section {
+                padding: 60px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Tom & Jerry Builders</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section class="hero" id="home">
+    <h2>Building Strong Foundations in New York</h2>
+    <p>
+        Tom & Jerry Builders is a trusted construction company delivering
+        high-quality residential and commercial projects across New York, USA.
+    </p>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+    <h3>About Us</h3>
+    <p class="about">
+        With years of experience in the construction industry, Tom & Jerry Builders
+        is committed to excellence, safety, and customer satisfaction.
+        From concept to completion, we bring your vision to life with precision and care.
+    </p>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+    <h3>Our Services</h3>
+    <div class="cards">
+        <div class="card">
+            <h4>Residential Construction</h4>
+            <p>Custom homes, villas, apartments, and housing projects.</p>
+        </div>
+        <div class="card">
+            <h4>Commercial Construction</h4>
+            <p>Office buildings, retail spaces, warehouses, and malls.</p>
+        </div>
+        <div class="card">
+            <h4>Renovation & Remodeling</h4>
+            <p>Modern upgrades and remodeling for homes and offices.</p>
+        </div>
+        <div class="card">
+            <h4>Interior Design</h4>
+            <p>Stylish, functional, and customized interior solutions.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+    <h3>Contact Us</h3>
+    <div class="contact-container">
+        <div class="contact-form">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <input type="text" placeholder="Phone Number">
+            <textarea rows="5" placeholder="Your Message"></textarea>
+            <button>Send Message</button>
+        </div>
+
+        <div class="contact-info">
+            <p><strong>Address:</strong><br>
+               New York, USA</p>
+
+            <p><strong>Phone:</strong><br>
+               +1 (234) 567-8900</p>
+
+            <p><strong>Email:</strong><br>
+               info@tomandjerrybuilders.com</p>
+
+            <p><strong>Working Hours:</strong><br>
+               Mon – Sat : 9:00 AM – 6:00 PM</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 TomAndJerryBuilders.com | All Rights Reserved
+</footer>
+
+</body>
+</html>
