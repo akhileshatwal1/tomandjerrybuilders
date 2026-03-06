@@ -1,73 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Tom & Jerry Builders | New York</title>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Singh Landscaping & Lawn Sprinkler Corp. Queens NY — Landscaping, lawn care, asphalt painting & playground marking.">
+  <title>Home | Singh Landscaping &amp; Lawn Sprinkler Corp.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header class="header">
-  <div class="logo">Tom & Jerry Builders</div>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#projects">Projects</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+<div class="topbar">
+  <a href="tel:7187403068"><i class="fas fa-phone"></i> (718) 740-3068</a>
+  <span><i class="fas fa-map-marker-alt"></i> 9905 211th Street, Queens Village NY, 11429</span>
+  <div class="tb-right">
+    <a href="mailto:singhlandscaping@gmail.com"><i class="fas fa-envelope"></i> singhlandscaping@gmail.com</a>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-ring">
+        <svg viewBox="0 0 48 48" fill="none">
+          <path d="M24 6C16.8 6 11 11.8 11 19c0 5.8 3.5 10.8 8.5 13.1V36h9v-3.9C33.5 29.8 37 24.8 37 19c0-7.2-5.8-13-13-13z" fill="#7dc000"/>
+          <path d="M20 36h8v5a1 1 0 01-1 1h-6a1 1 0 01-1-1v-5z" fill="#7dc000"/>
+        </svg>
+      </div>
+      <div class="logo-name">Singh Landscaping &amp; Lawn Sprinkler, Corp.</div>
+    </a>
+    <button class="hamburger" id="ham-btn" aria-label="Menu"><i class="fas fa-bars"></i></button>
+    <nav id="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="projects.html">Our Projects</a>
+      <a href="faqs.html">FAQs</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </div>
 </header>
 
 <section class="hero">
   <div class="hero-text">
-    <h1>Timeless Building.<br>New York Craftsmanship.</h1>
-    <p>Luxury residential and commercial construction across New York City.</p>
+    <h1>Best Gardening &amp; Tree Trimming<br>Services in Queens, NY</h1>
+    <h2>Landscaping services in Queens, NY</h2>
+    <a href="contact.html" class="btn btn-green">Get Free Estimate</a>
   </div>
 </section>
 
-<section id="about" class="section">
-  <div class="content">
-    <h2>About Us</h2>
-    <p>
-      Tom & Jerry Builders is a New York–based construction studio specializing in refined
-      residential and commercial spaces. With decades of combined experience, we bring
-      thoughtful design, expert craftsmanship, and enduring quality to every project.
+<section class="section" style="background:#f7f7f7;">
+  <div class="section-inner">
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-img" style="background-color:#a5d6a7;background-image:url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=70&auto=format');"></div>
+        <div class="card-body">
+          <h3>Landscaping Services in the New York, NY</h3>
+          <a href="contact.html" class="btn btn-green">Get Free Estimate</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img" style="background-color:#90a4ae;background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=70&auto=format');"></div>
+        <div class="card-body">
+          <h3>Asphalt Paving &amp; Driveway Contractors in New York</h3>
+          <a href="contact.html" class="btn btn-green">Get Free Estimate</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img" style="background-color:#80cbc4;background-image:url('https://images.unsplash.com/photo-1585320806297-9794b3e4aaae?w=600&q=70&auto=format');"></div>
+        <div class="card-body">
+          <h3>Complete Lawn Care &amp; Sodding Installation Services</h3>
+          <a href="contact.html" class="btn btn-green">Get Free Estimate</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:#fff;">
+  <div class="section-inner">
+    <div class="cards-grid">
+      <div style="display:flex;gap:16px;align-items:flex-start;">
+        <div style="min-width:80px;width:80px;height:70px;border-radius:5px;background:#a5d6a7 url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=200&q=60&auto=format') center/cover;"></div>
+        <div><h3 style="font-size:16px;margin-bottom:5px;">Retaining Wall &amp; Paver Installation</h3><p style="font-size:13px;margin:0;">Professional retaining walls and pavers to protect and beautify your property.</p></div>
+      </div>
+      <div style="display:flex;gap:16px;align-items:flex-start;">
+        <div style="min-width:80px;width:80px;height:70px;border-radius:5px;background:#aed581 url('https://images.unsplash.com/photo-1585320806297-9794b3e4aaae?w=200&q=60&auto=format') center/cover;"></div>
+        <div><h3 style="font-size:16px;margin-bottom:5px;">Best Gardening &amp; Tree Trimming Services</h3><p style="font-size:13px;margin:0;">Expert pruning, trimming and gardening to keep your outdoors beautiful.</p></div>
+      </div>
+      <div style="display:flex;gap:16px;align-items:flex-start;">
+        <div style="min-width:80px;width:80px;height:70px;border-radius:5px;background:#80deea url('https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=200&q=60&auto=format') center/cover;"></div>
+        <div><h3 style="font-size:16px;margin-bottom:5px;">Playground Painting &amp; Art Services</h3><p style="font-size:13px;margin:0;">Bright asphalt markings using Plexipave &amp; Sport Master — 300+ options.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:#f7f7f7;">
+  <div class="section-inner">
+    <div class="two-col">
+      <div>
+        <h2 class="sec-title">Singh Landscaping &amp; Lawn Sprinkler, Corp.</h2>
+        <h3 style="font-size:19px;margin-bottom:12px;">Trusted Landscaping and Lawn Care Company in New York, NY</h3>
+        <p>Looking for landscape designs or playgrounds for your home or property? Let Ricky Singh and his team turn your outdoors into elegant, functional, all-weather, and environmentally conscious recreational spaces. Here at Singh Landscaping &amp; Lawn Sprinkler Corp., we offer quality landscaping services that meet your requirements.</p>
+        <p>We offer our asphalt marking services for playgrounds, parks, daycare, and other recreational sections, and our markings are guaranteed to be bright and innovative. With Plexipave and Sport Master asphalt painting products, we have over 300 products, such as school logos and color options.</p>
+        <h3 style="font-size:17px;margin:18px 0 10px;">Transform Your Outdoor Space</h3>
+        <p>Sprinkler system installation and repair, trimming, mowing, fertilizing, weeding, and other determined lawn-care requirements will be handled professionally so that you get the best lawn. We own the finest sod installation and grass sod services that will give the perfect look to your yard. We also offer efficient landscape drainage services and beautiful landscape lighting services.</p>
+        <a href="contact.html" class="btn btn-green" style="margin-top:8px;">Get Free Estimate</a>
+      </div>
+      <div>
+        <div class="intro-img" style="margin-bottom:20px;"><i class="fas fa-seedling"></i></div>
+        <div style="background:#fff;border-radius:8px;padding:20px;border-left:4px solid #7dc000;">
+          <h3 style="font-size:17px;margin-bottom:10px;">Commercial Landscape Services New York</h3>
+          <p style="font-size:14px;">We serve outstanding clients such as the <strong>NYC School Construction Authority</strong>, <strong>City of New York Park and Recreation</strong>, <strong>New York State of Opportunity</strong>, <strong>New York City Transit</strong>, and the <strong>NYC Department of Design and Construction</strong>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="logos-bar">
+  <div class="logos-inner">
+    <div class="logo-badge">NYC School<br>Construction Authority</div>
+    <div class="logo-badge">NYC Park &amp;<br>Recreation</div>
+    <div class="logo-badge">NY State of<br>Opportunity</div>
+    <div class="logo-badge">NYC Transit</div>
+    <div class="logo-badge">NYC Dept. Design<br>&amp; Construction</div>
+  </div>
+</div>
+
+<section class="section" style="background:#f7f7f7;">
+  <div class="section-inner">
+    <h2 class="sec-title center">Our Services</h2>
+    <div class="cards-grid">
+      <div class="svc3-card">
+        <div class="svc3-img" style="background-color:#81c784;background-image:url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=70&auto=format');"></div>
+        <div class="svc3-body"><h3>Professional Landscaping Services</h3><p>Complete landscaping: sodding, mulching, tree trimming, sprinkler installation, drainage, and lighting.</p><a href="services.html" class="link-more">View More &rarr;</a></div>
+      </div>
+      <div class="svc3-card">
+        <div class="svc3-img" style="background-color:#90a4ae;background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=70&auto=format');"></div>
+        <div class="svc3-body"><h3>Expert Paving and Construction</h3><p>Asphalt paving, driveway construction, parking lot lines, seal coating, and sports court marking.</p><a href="services.html" class="link-more">View More &rarr;</a></div>
+      </div>
+      <div class="svc3-card">
+        <div class="svc3-img" style="background-color:#f48fb1;background-image:url('https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=600&q=70&auto=format');"></div>
+        <div class="svc3-body"><h3>Playground Marking &amp; Painting</h3><p>Schoolyard games, playground marking, safety surfaces, synthetic turf, and ramp installation.</p><a href="services.html" class="link-more">View More &rarr;</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div><div class="stat-num">150+</div><div class="stat-label">Completed Projects</div></div>
+    <div><div class="stat-num">200+</div><div class="stat-label">Happy Clients</div></div>
+    <div><div class="stat-num">25+</div><div class="stat-label">Winning Awards</div></div>
+    <div><div class="stat-num">20+</div><div class="stat-label">Years Experience</div></div>
+  </div>
+</div>
+
+<section class="section" style="background:#fff;">
+  <div class="section-inner">
+    <h2 class="sec-title center">Our Work</h2>
+    <div class="gallery-grid">
+      <div class="g-item" style="background-color:#a5d6a7;background-image:url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=70&auto=format');" data-full="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200"><div class="g-cap">Sprinkler Repair &mdash; Queens, NY</div></div>
+      <div class="g-item" style="background-color:#81c784;background-image:url('https://images.unsplash.com/photo-1585320806297-9794b3e4aaae?w=600&q=70&auto=format');" data-full="https://images.unsplash.com/photo-1585320806297-9794b3e4aaae?w=1200"><div class="g-cap">Commercial Landscape &mdash; Queens, NY</div></div>
+      <div class="g-item" style="background-color:#4caf50;background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=70&auto=format');" data-full="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200"><div class="g-cap">General Contractor &mdash; Queens, NY</div></div>
+      <div class="g-item" style="background-color:#388e3c;background-image:url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=70&auto=format');filter:hue-rotate(20deg);" data-full="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200"><div class="g-cap">Landscaping Construction &mdash; Queens, NY</div></div>
+      <div class="g-item" style="background-color:#2e7d32;background-image:url('https://images.unsplash.com/photo-1585320806297-9794b3e4aaae?w=600&q=70&auto=format');filter:hue-rotate(40deg);" data-full="https://images.unsplash.com/photo-1585320806297-9794b3e4aaae?w=1200"><div class="g-cap">Landscape Drainage &mdash; Queens, NY</div></div>
+      <div class="g-item" style="background-color:#90a4ae;background-image:url('https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=600&q=70&auto=format');" data-full="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=1200"><div class="g-cap">Playground Painting &mdash; Queens, NY</div></div>
+      <div class="g-item" style="background-color:#aed581;background-image:url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=70&auto=format');filter:saturate(1.4);" data-full="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200"><div class="g-cap">Landscaping Services &mdash; Queens, NY</div></div>
+      <div class="g-item" style="background-color:#c5e1a5;background-image:url('https://images.unsplash.com/photo-1585320806297-9794b3e4aaae?w=600&q=70&auto=format');filter:hue-rotate(-20deg);" data-full="https://images.unsplash.com/photo-1585320806297-9794b3e4aaae?w=1200"><div class="g-cap">Lawn Care &mdash; Queens, NY</div></div>
+    </div>
+    <div style="text-align:center;margin-top:28px;"><a href="gallery.html" class="btn btn-outline">View Full Gallery</a></div>
+  </div>
+</section>
+
+<section class="section" style="background:#2b2b2b;">
+  <div class="section-inner">
+    <h2 class="sec-title center" style="color:#fff;">Happy Clients</h2>
+    <div class="testi-grid">
+      <div class="testi-card"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testi-text">I just needed a one time clean-up. I spoke with Ricky who handles my area. He came to the property, did an assessment and gave me a price. Ricky quoted me a very reasonable price and scheduled me for the next day. They did a fabulous job and we were very pleased with their work. My corner property looks nice and neat. A HUGE Thank you to Singh Landscaping for coming through.</p><div class="testi-author">&mdash; Elle Gee</div></div>
+      <div class="testi-card"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testi-text">My service call for sprinkler repair was handled by Jasmine at the office in a very professional, prompt and tactful way that even though it was a rainy day, Jasmine managed to scheduled the service so she even beat the bad weather. Louis did the repairs and had the system up and running in very little time. Great Job Singh and Team!</p><div class="testi-author">&mdash; Iftakhar Alam</div></div>
+      <div class="testi-card"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testi-text">Most excellent service! On time, on-budget, and left the yards spotless when the work was complete. Had a sprinkler repair/installation at my home as well as my parent&rsquo;s home completed the same day. Fair, honest, neat, and polite. I recommend these guys without reservation.</p><div class="testi-author">&mdash; Jeffrey BC</div></div>
+      <div class="testi-card"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testi-text">I used Singh landscaping to work in my house and they were very professional, clean my lawn perfectly, and they did concrete work too so perfectly. I am really happy and satisfied with their service.</p><div class="testi-author">&mdash; Ranjit Singh</div></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="projects.html">Our Projects</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Information</h4>
+      <ul>
+        <li><i class="fas fa-map-marker-alt"></i> 9905 211th Street Queens Village NY, 11429</li>
+        <li><i class="fas fa-envelope"></i> <a href="mailto:singhlandscaping@gmail.com">singhlandscaping@gmail.com</a></li>
+        <li><i class="fas fa-phone"></i> <a href="tel:7187403068">(718) 740-3068</a></li>
+        <li><i class="fas fa-phone"></i> <a href="tel:7184683946">(718) 468-3946</a></li>
+        <li><i class="fas fa-phone"></i> <a href="tel:7187403002">(718) 740-3002</a></li>
+      </ul>
+      <div class="social-row">
+        <a class="soc-btn" href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a class="soc-btn" href="#" aria-label="Yelp"><i class="fab fa-yelp"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Business Hours</h4>
+      <ul>
+        <li><i class="fas fa-calendar-check"></i> Monday To Friday</li>
+        <li><i class="fas fa-clock"></i> 9:00am &ndash; 6:00pm</li>
+        <li><i class="fas fa-calendar-times"></i> Saturday &ndash; Sunday</li>
+        <li><i class="fas fa-times-circle"></i> Closed</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2022 Singh Landscaping &amp; Lawn Sprinkler, Corp. All rights reserved.</p>
+    <p style="margin-top:6px;">
+      <a href="https://www.taxamius.com" target="_blank">Website Development</a> |
+      <a href="https://www.taxamius.com" target="_blank">Hosting</a> |
+      <a href="https://www.taxamius.com" target="_blank">SEO</a> |
+      <a href="https://www.taxamius.com" target="_blank">Digital Marketing</a>
     </p>
   </div>
-</section>
-
-<section id="services" class="section alt">
-  <h2>Our Services</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Residential Construction</h3>
-      <p>Custom homes, townhouses, and renovations built to last.</p>
-    </div>
-    <div class="card">
-      <h3>Commercial Buildouts</h3>
-      <p>Office, retail, and hospitality spaces crafted with precision.</p>
-    </div>
-    <div class="card">
-      <h3>Design & Planning</h3>
-      <p>From concept to completion, we manage every detail.</p>
-    </div>
-  </div>
-</section>
-
-<section id="projects" class="section">
-  <h2>Selected Projects</h2>
-  <div class="image-grid">
-    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="NY Builder Project">
-    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c" alt="Construction NYC">
-    <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d" alt="Modern Building">
-  </div>
-</section>
-
-<footer class="footer">
-  <p>© 2026 Tom & Jerry Builders · New York, USA</p>
-<p>Developed by : Recloud Private Ltd.| Nanakmatta(India) | +91-9654022641
 </footer>
-
+<script src="main.js"></script>
 </body>
 </html>
